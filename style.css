@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 97%;
+    height: 95%;
+    background-color: rgb(255, 255, 255);
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 50%;
+    border-top: 2px solid #202020;
+    border-left: 2px solid #202020;
+    box-sizing: border-box;
+}
+
+
+
+main::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 50%;
+    border-bottom: 2px solid #202020;
+    border-right: 2px solid #202020;
+    transform: translate(176%, -65%);
+}
+
+nav {
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    width: 100%;
+}
+
+li:not(:first-child) {
+    margin-left: 3%;
+}
+
+li:first-child {
+    margin-left: 4%;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0px;
+    padding-top: 0%;
+    padding-left: 0%;
+}
+
+.menu__layout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-left: 1%;
+}
+
+.menu__item {
+    display: inline;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    position: relative;
+    color: #333; /* Cor padrão do texto */
+    overflow: hidden;
+}
+
+.menu__item:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu__item::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #202020; /* Cor do sublinhado */
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.menu__item:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+.content__area {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    width: 100%;
+    height: 60%;
+}
+
+.title {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 64px;
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+.sub__title {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 32px;
+    width: 70%;
+    text-align: start;
+}
+
+.content__text {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 16px;
+    width: 70%;
+    text-align: start;
+}
+
+.calculate__1 {
+    background-color: #202020;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 32px;
+    border-radius: 16px;
+    padding: 5px 15px 5px 15px;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.50);
+    transition: background 0.9s ease, box-shadow 0.9s ease, border 0.9s ease;
+}
+
+.calculate__1:hover {
+    background: linear-gradient(180deg, rgba(32,32,32,1) 0%, rgba(88,88,88,1) 100%);
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.25);
+    border: 2px solid rgb(137, 137, 137); /* Cor e largura da borda no hover */
+}
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
