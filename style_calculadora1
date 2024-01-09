@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 97%;
+    height: 95%;
+    background-color: rgb(255, 255, 255);
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 50%;
+    border-top: 2px solid #202020;
+    border-left: 2px solid #202020;
+    box-sizing: border-box;
+}
+
+
+
+main::after {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 50%;
+    border-bottom: 2px solid #202020;
+    border-right: 2px solid #202020;
+    transform: translate(176%, -81%);
+}
+
+nav {
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    width: 100%;
+}
+
+li:not(:first-child) {
+    margin-left: 3%;
+}
+
+li:first-child {
+    margin-left: 4%;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0px;
+    padding-top: 0%;
+    padding-left: 0%;
+}
+
+.menu__layout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-left: 1%;
+}
+
+.menu__item {
+    display: inline;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    position: relative;
+    color: #333;
+    /* Cor padrão do texto */
+    overflow: hidden;
+}
+
+.menu__item:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu__item::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #202020;
+    /* Cor do sublinhado */
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.menu__item:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+.content__area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content__circle {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    clip-path: circle(40% at 50% 50%);
+    background-color: #ffffff;
+}
+
+.circle1 {
+    grid-area: 1 / 1 / 2 / 2;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+
+
+
+}
+
+.circle2 {
+    grid-area: 1 / 2 / 2 / 3;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+
+}
+
+.circle3 {
+    grid-area: 2 / 1 / 3 / 2;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+
+}
+
+.circle4 {
+    grid-area: 2 / 2 / 3 / 3;
+
+
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.circle1:hover,
+.circle2:hover,
+.circle3:hover,
+.circle4:hover {
+    background-color: #5b5b5b;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 5px solid rgb(255, 255, 255);
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 32px;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+    color: white;
+}
+
+.circle1,
+.circle2 {
+    padding-top: 35%;
+}
+
+.circle3,
+.circle4 {
+    padding-bottom: 35%;
+}
+
+.circle1,
+.circle3 {
+    padding-left: 35%;
+}
+
+.circle2,
+.circle4 {
+    padding-right: 35%;
+}
+
+
+
+
+
+
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
