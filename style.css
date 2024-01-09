@@ -4,7 +4,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,6 +156,14 @@ li {
     border: 2px solid rgb(137, 137, 137); /* Cor e largura da borda no hover */
 }
 
+ footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    transform: translate(-0.5%, 100%);
+ }
+
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -256,7 +264,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 menu,
