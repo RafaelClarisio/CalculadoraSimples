@@ -8,12 +8,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 main {
     width: 97%;
     height: 95%;
     background-color: rgb(255, 255, 255);
+    
 }
 
 main::before {
@@ -222,7 +224,13 @@ li {
 }
 
 
-
+ footer {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    transform: translate(-2%, 42.5vh);
+ }
 
 
 
@@ -328,7 +336,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 menu,
